@@ -2,9 +2,9 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>New user</title>
+    <title></title>
 </head>
-<body>
+<body th:align="center">
 <h1>Добавление Пользователя</h1>
 
 <form th:method="POST" th:action="@{/new}" th:object="${user}">
@@ -17,7 +17,8 @@
     <label for="age">Enter last age:</label>
     <input type="text" th:field="*{age}" id="age"/>
     <br/>
-    <input type="submit" value="Create!">
+    <br/>
+    <input type="submit" value="Добавить">
     <br/>
 </form>
 </body>
